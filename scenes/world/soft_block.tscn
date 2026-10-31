@@ -1,0 +1,14 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/world/soft_block.gd" id="1_soft"]
+
+[sub_resource type="RectangleShape2D" id="block_shape"]
+size = Vector2(16, 16)
+
+[node name="SoftBlock" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_soft")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("block_shape")

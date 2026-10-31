@@ -1,0 +1,102 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/player/player.gd" id="1_player"]
+[ext_resource type="Script" path="res://scripts/player/cat_placeholder.gd" id="2_visual"]
+[ext_resource type="Script" path="res://scripts/combat/hurtbox.gd" id="3_hurtbox"]
+[ext_resource type="Script" path="res://scripts/combat/hitbox.gd" id="4_hitbox"]
+
+[sub_resource type="RectangleShape2D" id="body_shape"]
+size = Vector2(14, 18)
+
+[sub_resource type="RectangleShape2D" id="hurt_shape"]
+size = Vector2(12, 16)
+
+[sub_resource type="RectangleShape2D" id="scratch_shape"]
+size = Vector2(24, 22)
+
+[sub_resource type="CircleShape2D" id="spin_shape"]
+radius = 28.0
+
+[sub_resource type="RectangleShape2D" id="pounce_shape"]
+size = Vector2(22, 12)
+
+[sub_resource type="RectangleShape2D" id="dash_shape"]
+size = Vector2(26, 18)
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 67
+floor_snap_length = 4.0
+script = ExtResource("1_player")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -9)
+shape = SubResource("body_shape")
+
+[node name="Visual" type="Node2D" parent="."]
+script = ExtResource("2_visual")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 0
+monitoring = false
+script = ExtResource("3_hurtbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, -9)
+shape = SubResource("hurt_shape")
+
+[node name="ScratchHitbox" type="Area2D" parent="."]
+position = Vector2(18, -9)
+collision_layer = 0
+collision_mask = 34
+script = ExtResource("4_hitbox")
+knockback_force = 160.0
+active = false
+can_dig = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ScratchHitbox"]
+shape = SubResource("scratch_shape")
+
+[node name="SpinHitbox" type="Area2D" parent="."]
+position = Vector2(0, -9)
+collision_layer = 0
+collision_mask = 32
+script = ExtResource("4_hitbox")
+damage = 2
+knockback_force = 220.0
+active = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpinHitbox"]
+shape = SubResource("spin_shape")
+
+[node name="PounceHitbox" type="Area2D" parent="."]
+position = Vector2(0, 2)
+collision_layer = 0
+collision_mask = 32
+script = ExtResource("4_hitbox")
+damage = 2
+knockback_force = 120.0
+active = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PounceHitbox"]
+shape = SubResource("pounce_shape")
+
+[node name="DashAttackHitbox" type="Area2D" parent="."]
+position = Vector2(14, -9)
+collision_layer = 0
+collision_mask = 32
+script = ExtResource("4_hitbox")
+damage = 3
+knockback_force = 280.0
+active = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DashAttackHitbox"]
+shape = SubResource("dash_shape")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -24)
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true

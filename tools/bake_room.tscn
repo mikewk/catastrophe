@@ -1,0 +1,6 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://tools/bake_room.gd" id="1_bake"]
+
+[node name="BakeRoom" type="Node"]
+script = ExtResource("1_bake")
