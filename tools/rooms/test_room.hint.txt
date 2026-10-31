@@ -2,4 +2,5 @@ TEST ROOM - Move: stick/WASD   Jump: A/Space   Scratch: X/J (+up / +down in air)
 Special (25 energy): Y/K = Spin,  +down in air = Pounce,  while sprinting = Dash attack
 Sprint: hold B/RT/Shift (needs Dash)   Drop through platform: down + jump
 Pickups: > Dash  2 Double Jump  W Wall Jump  C Wall Climb  D Dig
+Bestiary gallery through the door on the right; stairs at the far end go up
 F1 unlock all abilities   F2 remove abilities   F3 refill hearts/energy   Esc/Start pause

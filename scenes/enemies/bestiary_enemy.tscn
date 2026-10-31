@@ -1,0 +1,31 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/bestiary_enemy.gd" id="1_enemy"]
+[ext_resource type="Script" path="res://scripts/combat/hurtbox.gd" id="2_hurtbox"]
+[ext_resource type="Script" path="res://scripts/combat/hitbox.gd" id="3_hitbox"]
+
+[node name="BestiaryEnemy" type="CharacterBody2D"]
+collision_layer = 8
+collision_mask = 67
+floor_snap_length = 4.0
+script = ExtResource("1_enemy")
+max_health = 0
+move_speed = 35.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 32
+collision_mask = 0
+monitoring = false
+script = ExtResource("2_hurtbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+
+[node name="ContactHitbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+script = ExtResource("3_hitbox")
+continuous = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContactHitbox"]

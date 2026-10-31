@@ -8,7 +8,8 @@ scratch attack plus energy-powered specials.
 
 Open the folder in Godot 4.7 and press **F5**. The game currently starts in a
 test room containing every mechanic. Controls are listed in the room's
-on-screen hint.
+on-screen hint. Through the door on the right is a gallery with one pen for
+each of the 53 BESTIARY creatures (two floors; stairs at the far end).
 
 | Action | Controller (Xbox) | Keyboard |
 |---|---|---|
@@ -29,12 +30,13 @@ abilities, **F3** refill hearts and energy.
 
 ```
 assets/          art and audio packs (see assets/README.md)
+BESTIARY/        enemy sprite pack; must stay at the project root (see its README)
 scenes/          player, enemies, world objects, rooms, UI, main game scene
 scripts/
   autoload/      GameState: abilities, hearts, energy
   combat/        Hitbox / Hurtbox
   player/        cat controller and sprite animation
-  enemies/       Enemy base class and enemy types
+  enemies/       Enemy base class, BestiaryEnemy (any BESTIARY creature), Rat
   world/         rooms, soft blocks, spikes, pickups
 tools/           project setup and room-baking tools
 tests/           scripted playtest
@@ -59,9 +61,12 @@ godot --headless --script res://tools/build_cat_frames.gd
 
 ## Tests
 
-A scripted playtest drives the cat through every mechanic and reports
-pass/fail:
+```
+godot --headless res://tests/smoke_test.tscn       # the cat's mechanics
+godot --headless res://tests/verify_bestiary.tscn  # every BESTIARY creature imports
+godot --headless res://tests/gallery_test.tscn     # the test room's creature gallery
+```
 
-```
-godot --headless res://tests/smoke_test.tscn
-```
+The BESTIARY `catalog/`, `gif/`, `sheets/`, `sheets_2x/` and Unity folders
+carry a `.gdignore`: they're previews or for other engines, and nothing in the
+game uses them. Delete the `.gdignore` if you need one of them imported.

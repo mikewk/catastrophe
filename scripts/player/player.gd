@@ -106,6 +106,7 @@ var _last_safe_position := Vector2.ZERO
 
 
 func _ready() -> void:
+	add_to_group(&"player")
 	_recalculate_jump_physics()
 	hurtbox.hit_received.connect(_on_hit_received)
 	scratch_hitbox.hit_landed.connect(_on_scratch_landed)

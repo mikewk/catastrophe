@@ -12,11 +12,6 @@ func _behave(_delta: float) -> void:
 	velocity.x = facing * move_speed
 
 
-func _ledge_ahead() -> bool:
-	var ahead := global_transform.translated(Vector2(facing * 8.0, 0.0))
-	return not test_move(ahead, Vector2(0.0, 4.0))
-
-
 func _draw() -> void:
 	var color := Color.WHITE if is_flashing() else BODY
 	var f := float(facing)
