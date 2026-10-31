@@ -1,0 +1,158 @@
+# Art for the test room. Commands are described at the top of tools/bake_room.gd.
+tileset house
+
+# Wallpaper: original area, then the gallery's lower and upper floors
+wallpaper Wallpaper2 0 0 79 44
+wallpaper Wallpaper6 80 23 293 44
+wallpaper Wallpaper4 80 0 293 22
+
+# Living room by the spawn point (floor surface is the bottom of row 41)
+BookShelfs_Large 3 41
+Plant 7 41
+Window_Front 12 36
+Painting_Large 17 33
+Sofa 19 41
+FloorLamp 23 41
+
+# Hanging lamps: three pieces hung from the ceiling (bottom of row 1)
+CeilingLamp_Top 12 1 0 4
+CeilingLamp_Mid 12 2 0 4
+CeilingLamp_Bottom 12 3 0 4
+CeilingLamp_Top 46 1 0 4
+CeilingLamp_Mid 46 2 0 4
+CeilingLamp_Bottom 46 3 0 4
+
+# Double Jump ledge (surface is the bottom of row 34)
+TelevisionTable 36 34
+Television 36 34 0 -16
+SoftChair 38 34
+Painting_Small 37 30
+
+# Under the platforms
+Dresser 49 41
+Candle 49 41 0 -26
+
+# Upper walkway (surface is the bottom of row 9)
+BookShelfs_Small 42 9
+Painting_Large 50 5
+Bed_Angle1 52 9
+
+# Wall-jump shaft and climbing wall
+Window_Front 62 28
+Painting_Small 72 20
+
+# Kitchen beside the climbing wall
+KitchenCounter_Left 70 41
+KitchenCounter_Mid 71 41
+KitchenCounter_Oven 72 41 8 0
+KitchenCounter_Right 74 41
+Sink 71 41 0 -16
+Window_Front 72 35
+Fridge 76 41
+
+# Gallery: windows over even pens, lamps over odd pens
+Window_Front 87 32
+CeilingLamp_Top 94 22 0 4
+CeilingLamp_Mid 94 23 0 4
+CeilingLamp_Bottom 94 24 0 4
+Window_Front 101 32
+CeilingLamp_Top 108 22 0 4
+CeilingLamp_Mid 108 23 0 4
+CeilingLamp_Bottom 108 24 0 4
+Window_Front 115 32
+CeilingLamp_Top 122 22 0 4
+CeilingLamp_Mid 122 23 0 4
+CeilingLamp_Bottom 122 24 0 4
+Window_Front 129 32
+CeilingLamp_Top 136 22 0 4
+CeilingLamp_Mid 136 23 0 4
+CeilingLamp_Bottom 136 24 0 4
+Window_Front 143 32
+CeilingLamp_Top 150 22 0 4
+CeilingLamp_Mid 150 23 0 4
+CeilingLamp_Bottom 150 24 0 4
+Window_Front 157 32
+CeilingLamp_Top 164 22 0 4
+CeilingLamp_Mid 164 23 0 4
+CeilingLamp_Bottom 164 24 0 4
+Window_Front 171 32
+CeilingLamp_Top 178 22 0 4
+CeilingLamp_Mid 178 23 0 4
+CeilingLamp_Bottom 178 24 0 4
+Window_Front 185 32
+CeilingLamp_Top 192 22 0 4
+CeilingLamp_Mid 192 23 0 4
+CeilingLamp_Bottom 192 24 0 4
+Window_Front 199 32
+CeilingLamp_Top 206 22 0 4
+CeilingLamp_Mid 206 23 0 4
+CeilingLamp_Bottom 206 24 0 4
+Window_Front 213 32
+CeilingLamp_Top 220 22 0 4
+CeilingLamp_Mid 220 23 0 4
+CeilingLamp_Bottom 220 24 0 4
+Window_Front 227 32
+CeilingLamp_Top 234 22 0 4
+CeilingLamp_Mid 234 23 0 4
+CeilingLamp_Bottom 234 24 0 4
+Window_Front 241 32
+CeilingLamp_Top 248 22 0 4
+CeilingLamp_Mid 248 23 0 4
+CeilingLamp_Bottom 248 24 0 4
+Window_Front 255 32
+CeilingLamp_Top 262 22 0 4
+CeilingLamp_Mid 262 23 0 4
+CeilingLamp_Bottom 262 24 0 4
+Window_Front 269 32
+Window_Front 87 11
+CeilingLamp_Top 94 1 0 4
+CeilingLamp_Mid 94 2 0 4
+CeilingLamp_Bottom 94 3 0 4
+Window_Front 101 11
+CeilingLamp_Top 108 1 0 4
+CeilingLamp_Mid 108 2 0 4
+CeilingLamp_Bottom 108 3 0 4
+Window_Front 115 11
+CeilingLamp_Top 122 1 0 4
+CeilingLamp_Mid 122 2 0 4
+CeilingLamp_Bottom 122 3 0 4
+Window_Front 129 11
+CeilingLamp_Top 136 1 0 4
+CeilingLamp_Mid 136 2 0 4
+CeilingLamp_Bottom 136 3 0 4
+Window_Front 143 11
+CeilingLamp_Top 150 1 0 4
+CeilingLamp_Mid 150 2 0 4
+CeilingLamp_Bottom 150 3 0 4
+Window_Front 157 11
+CeilingLamp_Top 164 1 0 4
+CeilingLamp_Mid 164 2 0 4
+CeilingLamp_Bottom 164 3 0 4
+Window_Front 171 11
+CeilingLamp_Top 178 1 0 4
+CeilingLamp_Mid 178 2 0 4
+CeilingLamp_Bottom 178 3 0 4
+Window_Front 185 11
+CeilingLamp_Top 192 1 0 4
+CeilingLamp_Mid 192 2 0 4
+CeilingLamp_Bottom 192 3 0 4
+Window_Front 199 11
+CeilingLamp_Top 206 1 0 4
+CeilingLamp_Mid 206 2 0 4
+CeilingLamp_Bottom 206 3 0 4
+Window_Front 213 11
+CeilingLamp_Top 220 1 0 4
+CeilingLamp_Mid 220 2 0 4
+CeilingLamp_Bottom 220 3 0 4
+Window_Front 227 11
+CeilingLamp_Top 234 1 0 4
+CeilingLamp_Mid 234 2 0 4
+CeilingLamp_Bottom 234 3 0 4
+Window_Front 241 11
+CeilingLamp_Top 248 1 0 4
+CeilingLamp_Mid 248 2 0 4
+CeilingLamp_Bottom 248 3 0 4
+Window_Front 255 11
+CeilingLamp_Top 262 1 0 4
+CeilingLamp_Mid 262 2 0 4
+CeilingLamp_Bottom 262 3 0 4

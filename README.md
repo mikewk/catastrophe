@@ -36,7 +36,7 @@ scripts/
   autoload/      GameState: abilities, hearts, energy
   combat/        Hitbox / Hurtbox
   player/        cat controller and sprite animation
-  enemies/       Enemy base class, BestiaryEnemy (any BESTIARY creature), Rat
+  enemies/       Enemy base class and BestiaryEnemy (any BESTIARY creature)
   world/         rooms, soft blocks, spikes, pickups
 tools/           project setup and room-baking tools
 tests/           scripted playtest
@@ -50,6 +50,13 @@ top of `tools/bake_room.gd`) and baked into scenes:
 ```
 godot --headless res://tools/bake_room.tscn -- test_room
 ```
+
+A room can also have `tools/rooms/<name>.decor.txt`, which picks its tileset,
+wallpaper and furniture (format at the top of `tools/bake_room.gd`). The house
+tiles are drawn at 2x so the furniture is in proportion with the cat; the art
+is visual only and collision always comes from the text map.
+`tools/build_house_tileset.gd` rebuilds the house tileset after tiles are added
+to `assets/tilesets/house/House/`.
 
 `tools/configure_project.gd` rewrites the project settings and input map.
 `tools/build_cat_frames.gd` rebuilds the cat's animations from the sheets in

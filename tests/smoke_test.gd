@@ -63,7 +63,7 @@ func _run() -> void:
 		for i in 3:
 			await _tap(&"attack")
 			await _frames(20)
-		_check(not is_instance_valid(rat), "three scratches defeat a rat")
+		_check(not is_instance_valid(rat) or rat.dead, "three scratches defeat a rat")
 	else:
 		_check(false, "found a rat to test against")
 

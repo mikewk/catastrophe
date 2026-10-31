@@ -5,6 +5,8 @@ extends Node
 ##   godot --headless res://tests/gallery_test.tscn
 
 const PEN_HALF_WIDTH := 56.0
+## The gallery starts through the doorway at map column 80.
+const GALLERY_START_X := 80 * 16
 
 var _failures: Array[String] = []
 
@@ -18,7 +20,7 @@ func _ready() -> void:
 	var enemies: Array[BestiaryEnemy] = []
 	var homes := {}
 	for n in game.current_room.get_node("Entities").get_children():
-		if n is BestiaryEnemy:
+		if n is BestiaryEnemy and n.global_position.x > GALLERY_START_X:
 			enemies.append(n)
 			homes[n] = n.global_position
 	var ids := enemies.map(func(e: BestiaryEnemy) -> String: return e.creature_id)
