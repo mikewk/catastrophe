@@ -1,0 +1,2195 @@
+{
+ "pack": "BESTIARY",
+ "version": "1.0",
+ "count": 53,
+ "states": [
+  "idle",
+  "move",
+  "attack",
+  "hit",
+  "death"
+ ],
+ "families": [
+  "Aberrations",
+  "Crawlers",
+  "Flyers",
+  "Slimes",
+  "Undead"
+ ],
+ "note": "idle and move loop; hit and death play once",
+ "creatures": [
+  {
+   "id": "slime_green",
+   "family": "Slimes",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/slime_green_idle.png",
+     "frames_dir": "frames/slime_green/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/slime_green_move.png",
+     "frames_dir": "frames/slime_green/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/slime_green_attack.png",
+     "frames_dir": "frames/slime_green/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/slime_green_hit.png",
+     "frames_dir": "frames/slime_green/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/slime_green_death.png",
+     "frames_dir": "frames/slime_green/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "slime_blood",
+   "family": "Slimes",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/slime_blood_idle.png",
+     "frames_dir": "frames/slime_blood/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/slime_blood_move.png",
+     "frames_dir": "frames/slime_blood/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/slime_blood_attack.png",
+     "frames_dir": "frames/slime_blood/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/slime_blood_hit.png",
+     "frames_dir": "frames/slime_blood/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/slime_blood_death.png",
+     "frames_dir": "frames/slime_blood/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "slime_void",
+   "family": "Slimes",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/slime_void_idle.png",
+     "frames_dir": "frames/slime_void/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/slime_void_move.png",
+     "frames_dir": "frames/slime_void/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/slime_void_attack.png",
+     "frames_dir": "frames/slime_void/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/slime_void_hit.png",
+     "frames_dir": "frames/slime_void/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/slime_void_death.png",
+     "frames_dir": "frames/slime_void/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "ooze_rot",
+   "family": "Slimes",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/ooze_rot_idle.png",
+     "frames_dir": "frames/ooze_rot/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/ooze_rot_move.png",
+     "frames_dir": "frames/ooze_rot/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/ooze_rot_attack.png",
+     "frames_dir": "frames/ooze_rot/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/ooze_rot_hit.png",
+     "frames_dir": "frames/ooze_rot/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/ooze_rot_death.png",
+     "frames_dir": "frames/ooze_rot/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "ooze_brine",
+   "family": "Slimes",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/ooze_brine_idle.png",
+     "frames_dir": "frames/ooze_brine/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/ooze_brine_move.png",
+     "frames_dir": "frames/ooze_brine/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/ooze_brine_attack.png",
+     "frames_dir": "frames/ooze_brine/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/ooze_brine_hit.png",
+     "frames_dir": "frames/ooze_brine/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/ooze_brine_death.png",
+     "frames_dir": "frames/ooze_brine/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "cube_gel",
+   "family": "Slimes",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/cube_gel_idle.png",
+     "frames_dir": "frames/cube_gel/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/cube_gel_move.png",
+     "frames_dir": "frames/cube_gel/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/cube_gel_attack.png",
+     "frames_dir": "frames/cube_gel/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/cube_gel_hit.png",
+     "frames_dir": "frames/cube_gel/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/cube_gel_death.png",
+     "frames_dir": "frames/cube_gel/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "bat_brown",
+   "family": "Flyers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/bat_brown_idle.png",
+     "frames_dir": "frames/bat_brown/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/bat_brown_move.png",
+     "frames_dir": "frames/bat_brown/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/bat_brown_attack.png",
+     "frames_dir": "frames/bat_brown/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/bat_brown_hit.png",
+     "frames_dir": "frames/bat_brown/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/bat_brown_death.png",
+     "frames_dir": "frames/bat_brown/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "bat_void",
+   "family": "Flyers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/bat_void_idle.png",
+     "frames_dir": "frames/bat_void/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/bat_void_move.png",
+     "frames_dir": "frames/bat_void/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/bat_void_attack.png",
+     "frames_dir": "frames/bat_void/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/bat_void_hit.png",
+     "frames_dir": "frames/bat_void/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/bat_void_death.png",
+     "frames_dir": "frames/bat_void/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "ghost_pale",
+   "family": "Flyers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/ghost_pale_idle.png",
+     "frames_dir": "frames/ghost_pale/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/ghost_pale_move.png",
+     "frames_dir": "frames/ghost_pale/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/ghost_pale_attack.png",
+     "frames_dir": "frames/ghost_pale/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/ghost_pale_hit.png",
+     "frames_dir": "frames/ghost_pale/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/ghost_pale_death.png",
+     "frames_dir": "frames/ghost_pale/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "ghost_void",
+   "family": "Flyers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/ghost_void_idle.png",
+     "frames_dir": "frames/ghost_void/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/ghost_void_move.png",
+     "frames_dir": "frames/ghost_void/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/ghost_void_attack.png",
+     "frames_dir": "frames/ghost_void/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/ghost_void_hit.png",
+     "frames_dir": "frames/ghost_void/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/ghost_void_death.png",
+     "frames_dir": "frames/ghost_void/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "wisp_arcane",
+   "family": "Flyers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/wisp_arcane_idle.png",
+     "frames_dir": "frames/wisp_arcane/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/wisp_arcane_move.png",
+     "frames_dir": "frames/wisp_arcane/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/wisp_arcane_attack.png",
+     "frames_dir": "frames/wisp_arcane/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/wisp_arcane_hit.png",
+     "frames_dir": "frames/wisp_arcane/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/wisp_arcane_death.png",
+     "frames_dir": "frames/wisp_arcane/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "wisp_ember",
+   "family": "Flyers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/wisp_ember_idle.png",
+     "frames_dir": "frames/wisp_ember/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/wisp_ember_move.png",
+     "frames_dir": "frames/wisp_ember/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/wisp_ember_attack.png",
+     "frames_dir": "frames/wisp_ember/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/wisp_ember_hit.png",
+     "frames_dir": "frames/wisp_ember/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/wisp_ember_death.png",
+     "frames_dir": "frames/wisp_ember/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "spider_black",
+   "family": "Crawlers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/spider_black_idle.png",
+     "frames_dir": "frames/spider_black/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/spider_black_move.png",
+     "frames_dir": "frames/spider_black/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/spider_black_attack.png",
+     "frames_dir": "frames/spider_black/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/spider_black_hit.png",
+     "frames_dir": "frames/spider_black/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/spider_black_death.png",
+     "frames_dir": "frames/spider_black/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "spider_venom",
+   "family": "Crawlers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/spider_venom_idle.png",
+     "frames_dir": "frames/spider_venom/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/spider_venom_move.png",
+     "frames_dir": "frames/spider_venom/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/spider_venom_attack.png",
+     "frames_dir": "frames/spider_venom/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/spider_venom_hit.png",
+     "frames_dir": "frames/spider_venom/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/spider_venom_death.png",
+     "frames_dir": "frames/spider_venom/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "beetle_iron",
+   "family": "Crawlers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/beetle_iron_idle.png",
+     "frames_dir": "frames/beetle_iron/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/beetle_iron_move.png",
+     "frames_dir": "frames/beetle_iron/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/beetle_iron_attack.png",
+     "frames_dir": "frames/beetle_iron/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/beetle_iron_hit.png",
+     "frames_dir": "frames/beetle_iron/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/beetle_iron_death.png",
+     "frames_dir": "frames/beetle_iron/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "beetle_venom",
+   "family": "Crawlers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/beetle_venom_idle.png",
+     "frames_dir": "frames/beetle_venom/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/beetle_venom_move.png",
+     "frames_dir": "frames/beetle_venom/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/beetle_venom_attack.png",
+     "frames_dir": "frames/beetle_venom/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/beetle_venom_hit.png",
+     "frames_dir": "frames/beetle_venom/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/beetle_venom_death.png",
+     "frames_dir": "frames/beetle_venom/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "rat_grey",
+   "family": "Crawlers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/rat_grey_idle.png",
+     "frames_dir": "frames/rat_grey/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/rat_grey_move.png",
+     "frames_dir": "frames/rat_grey/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/rat_grey_attack.png",
+     "frames_dir": "frames/rat_grey/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/rat_grey_hit.png",
+     "frames_dir": "frames/rat_grey/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/rat_grey_death.png",
+     "frames_dir": "frames/rat_grey/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "rat_plague",
+   "family": "Crawlers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/rat_plague_idle.png",
+     "frames_dir": "frames/rat_plague/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/rat_plague_move.png",
+     "frames_dir": "frames/rat_plague/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/rat_plague_attack.png",
+     "frames_dir": "frames/rat_plague/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/rat_plague_hit.png",
+     "frames_dir": "frames/rat_plague/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/rat_plague_death.png",
+     "frames_dir": "frames/rat_plague/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "grub_pale",
+   "family": "Crawlers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/grub_pale_idle.png",
+     "frames_dir": "frames/grub_pale/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/grub_pale_move.png",
+     "frames_dir": "frames/grub_pale/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/grub_pale_attack.png",
+     "frames_dir": "frames/grub_pale/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/grub_pale_hit.png",
+     "frames_dir": "frames/grub_pale/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/grub_pale_death.png",
+     "frames_dir": "frames/grub_pale/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "grub_rot",
+   "family": "Crawlers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/grub_rot_idle.png",
+     "frames_dir": "frames/grub_rot/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/grub_rot_move.png",
+     "frames_dir": "frames/grub_rot/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/grub_rot_attack.png",
+     "frames_dir": "frames/grub_rot/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/grub_rot_hit.png",
+     "frames_dir": "frames/grub_rot/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/grub_rot_death.png",
+     "frames_dir": "frames/grub_rot/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "snake_venom",
+   "family": "Crawlers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/snake_venom_idle.png",
+     "frames_dir": "frames/snake_venom/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/snake_venom_move.png",
+     "frames_dir": "frames/snake_venom/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/snake_venom_attack.png",
+     "frames_dir": "frames/snake_venom/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/snake_venom_hit.png",
+     "frames_dir": "frames/snake_venom/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/snake_venom_death.png",
+     "frames_dir": "frames/snake_venom/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "snake_void",
+   "family": "Crawlers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/snake_void_idle.png",
+     "frames_dir": "frames/snake_void/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/snake_void_move.png",
+     "frames_dir": "frames/snake_void/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/snake_void_attack.png",
+     "frames_dir": "frames/snake_void/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/snake_void_hit.png",
+     "frames_dir": "frames/snake_void/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/snake_void_death.png",
+     "frames_dir": "frames/snake_void/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "hand_flesh",
+   "family": "Crawlers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/hand_flesh_idle.png",
+     "frames_dir": "frames/hand_flesh/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/hand_flesh_move.png",
+     "frames_dir": "frames/hand_flesh/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/hand_flesh_attack.png",
+     "frames_dir": "frames/hand_flesh/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/hand_flesh_hit.png",
+     "frames_dir": "frames/hand_flesh/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/hand_flesh_death.png",
+     "frames_dir": "frames/hand_flesh/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "hand_grave",
+   "family": "Crawlers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/hand_grave_idle.png",
+     "frames_dir": "frames/hand_grave/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/hand_grave_move.png",
+     "frames_dir": "frames/hand_grave/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/hand_grave_attack.png",
+     "frames_dir": "frames/hand_grave/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/hand_grave_hit.png",
+     "frames_dir": "frames/hand_grave/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/hand_grave_death.png",
+     "frames_dir": "frames/hand_grave/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "crow_black",
+   "family": "Flyers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/crow_black_idle.png",
+     "frames_dir": "frames/crow_black/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/crow_black_move.png",
+     "frames_dir": "frames/crow_black/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/crow_black_attack.png",
+     "frames_dir": "frames/crow_black/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/crow_black_hit.png",
+     "frames_dir": "frames/crow_black/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/crow_black_death.png",
+     "frames_dir": "frames/crow_black/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "crow_plague",
+   "family": "Flyers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/crow_plague_idle.png",
+     "frames_dir": "frames/crow_plague/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/crow_plague_move.png",
+     "frames_dir": "frames/crow_plague/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/crow_plague_attack.png",
+     "frames_dir": "frames/crow_plague/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/crow_plague_hit.png",
+     "frames_dir": "frames/crow_plague/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/crow_plague_death.png",
+     "frames_dir": "frames/crow_plague/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "skull_ember",
+   "family": "Undead",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/skull_ember_idle.png",
+     "frames_dir": "frames/skull_ember/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/skull_ember_move.png",
+     "frames_dir": "frames/skull_ember/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/skull_ember_attack.png",
+     "frames_dir": "frames/skull_ember/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/skull_ember_hit.png",
+     "frames_dir": "frames/skull_ember/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/skull_ember_death.png",
+     "frames_dir": "frames/skull_ember/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "skull_void",
+   "family": "Undead",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/skull_void_idle.png",
+     "frames_dir": "frames/skull_void/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/skull_void_move.png",
+     "frames_dir": "frames/skull_void/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/skull_void_attack.png",
+     "frames_dir": "frames/skull_void/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/skull_void_hit.png",
+     "frames_dir": "frames/skull_void/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/skull_void_death.png",
+     "frames_dir": "frames/skull_void/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "skeleton_bone",
+   "family": "Undead",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/skeleton_bone_idle.png",
+     "frames_dir": "frames/skeleton_bone/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/skeleton_bone_move.png",
+     "frames_dir": "frames/skeleton_bone/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/skeleton_bone_attack.png",
+     "frames_dir": "frames/skeleton_bone/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/skeleton_bone_hit.png",
+     "frames_dir": "frames/skeleton_bone/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/skeleton_bone_death.png",
+     "frames_dir": "frames/skeleton_bone/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "skeleton_cursed",
+   "family": "Undead",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/skeleton_cursed_idle.png",
+     "frames_dir": "frames/skeleton_cursed/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/skeleton_cursed_move.png",
+     "frames_dir": "frames/skeleton_cursed/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/skeleton_cursed_attack.png",
+     "frames_dir": "frames/skeleton_cursed/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/skeleton_cursed_hit.png",
+     "frames_dir": "frames/skeleton_cursed/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/skeleton_cursed_death.png",
+     "frames_dir": "frames/skeleton_cursed/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "bonepile_bone",
+   "family": "Undead",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/bonepile_bone_idle.png",
+     "frames_dir": "frames/bonepile_bone/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/bonepile_bone_move.png",
+     "frames_dir": "frames/bonepile_bone/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/bonepile_bone_attack.png",
+     "frames_dir": "frames/bonepile_bone/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/bonepile_bone_hit.png",
+     "frames_dir": "frames/bonepile_bone/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/bonepile_bone_death.png",
+     "frames_dir": "frames/bonepile_bone/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "bonepile_grave",
+   "family": "Undead",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/bonepile_grave_idle.png",
+     "frames_dir": "frames/bonepile_grave/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/bonepile_grave_move.png",
+     "frames_dir": "frames/bonepile_grave/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/bonepile_grave_attack.png",
+     "frames_dir": "frames/bonepile_grave/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/bonepile_grave_hit.png",
+     "frames_dir": "frames/bonepile_grave/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/bonepile_grave_death.png",
+     "frames_dir": "frames/bonepile_grave/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "shade_void",
+   "family": "Undead",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/shade_void_idle.png",
+     "frames_dir": "frames/shade_void/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/shade_void_move.png",
+     "frames_dir": "frames/shade_void/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/shade_void_attack.png",
+     "frames_dir": "frames/shade_void/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/shade_void_hit.png",
+     "frames_dir": "frames/shade_void/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/shade_void_death.png",
+     "frames_dir": "frames/shade_void/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "shade_blood",
+   "family": "Undead",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/shade_blood_idle.png",
+     "frames_dir": "frames/shade_blood/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/shade_blood_move.png",
+     "frames_dir": "frames/shade_blood/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/shade_blood_attack.png",
+     "frames_dir": "frames/shade_blood/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/shade_blood_hit.png",
+     "frames_dir": "frames/shade_blood/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/shade_blood_death.png",
+     "frames_dir": "frames/shade_blood/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "wraith_void",
+   "family": "Undead",
+   "cell_px": [
+    48,
+    48
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/wraith_void_idle.png",
+     "frames_dir": "frames/wraith_void/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/wraith_void_move.png",
+     "frames_dir": "frames/wraith_void/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/wraith_void_attack.png",
+     "frames_dir": "frames/wraith_void/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/wraith_void_hit.png",
+     "frames_dir": "frames/wraith_void/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/wraith_void_death.png",
+     "frames_dir": "frames/wraith_void/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "wraith_grave",
+   "family": "Undead",
+   "cell_px": [
+    48,
+    48
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/wraith_grave_idle.png",
+     "frames_dir": "frames/wraith_grave/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/wraith_grave_move.png",
+     "frames_dir": "frames/wraith_grave/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/wraith_grave_attack.png",
+     "frames_dir": "frames/wraith_grave/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/wraith_grave_hit.png",
+     "frames_dir": "frames/wraith_grave/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/wraith_grave_death.png",
+     "frames_dir": "frames/wraith_grave/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "armour_iron",
+   "family": "Undead",
+   "cell_px": [
+    48,
+    48
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/armour_iron_idle.png",
+     "frames_dir": "frames/armour_iron/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/armour_iron_move.png",
+     "frames_dir": "frames/armour_iron/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/armour_iron_attack.png",
+     "frames_dir": "frames/armour_iron/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/armour_iron_hit.png",
+     "frames_dir": "frames/armour_iron/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/armour_iron_death.png",
+     "frames_dir": "frames/armour_iron/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "armour_black",
+   "family": "Undead",
+   "cell_px": [
+    48,
+    48
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/armour_black_idle.png",
+     "frames_dir": "frames/armour_black/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/armour_black_move.png",
+     "frames_dir": "frames/armour_black/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/armour_black_attack.png",
+     "frames_dir": "frames/armour_black/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/armour_black_hit.png",
+     "frames_dir": "frames/armour_black/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/armour_black_death.png",
+     "frames_dir": "frames/armour_black/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "mimic_wood",
+   "family": "Aberrations",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/mimic_wood_idle.png",
+     "frames_dir": "frames/mimic_wood/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/mimic_wood_move.png",
+     "frames_dir": "frames/mimic_wood/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/mimic_wood_attack.png",
+     "frames_dir": "frames/mimic_wood/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/mimic_wood_hit.png",
+     "frames_dir": "frames/mimic_wood/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/mimic_wood_death.png",
+     "frames_dir": "frames/mimic_wood/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "mimic_grave",
+   "family": "Aberrations",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/mimic_grave_idle.png",
+     "frames_dir": "frames/mimic_grave/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/mimic_grave_move.png",
+     "frames_dir": "frames/mimic_grave/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/mimic_grave_attack.png",
+     "frames_dir": "frames/mimic_grave/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/mimic_grave_hit.png",
+     "frames_dir": "frames/mimic_grave/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/mimic_grave_death.png",
+     "frames_dir": "frames/mimic_grave/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "eye_blood",
+   "family": "Aberrations",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/eye_blood_idle.png",
+     "frames_dir": "frames/eye_blood/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/eye_blood_move.png",
+     "frames_dir": "frames/eye_blood/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/eye_blood_attack.png",
+     "frames_dir": "frames/eye_blood/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/eye_blood_hit.png",
+     "frames_dir": "frames/eye_blood/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/eye_blood_death.png",
+     "frames_dir": "frames/eye_blood/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "eye_void",
+   "family": "Aberrations",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/eye_void_idle.png",
+     "frames_dir": "frames/eye_void/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/eye_void_move.png",
+     "frames_dir": "frames/eye_void/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/eye_void_attack.png",
+     "frames_dir": "frames/eye_void/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/eye_void_hit.png",
+     "frames_dir": "frames/eye_void/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/eye_void_death.png",
+     "frames_dir": "frames/eye_void/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "eye_venom",
+   "family": "Aberrations",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/eye_venom_idle.png",
+     "frames_dir": "frames/eye_venom/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/eye_venom_move.png",
+     "frames_dir": "frames/eye_venom/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/eye_venom_attack.png",
+     "frames_dir": "frames/eye_venom/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/eye_venom_hit.png",
+     "frames_dir": "frames/eye_venom/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/eye_venom_death.png",
+     "frames_dir": "frames/eye_venom/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "fungus_blood",
+   "family": "Aberrations",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/fungus_blood_idle.png",
+     "frames_dir": "frames/fungus_blood/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/fungus_blood_move.png",
+     "frames_dir": "frames/fungus_blood/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/fungus_blood_attack.png",
+     "frames_dir": "frames/fungus_blood/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/fungus_blood_hit.png",
+     "frames_dir": "frames/fungus_blood/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/fungus_blood_death.png",
+     "frames_dir": "frames/fungus_blood/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "fungus_rot",
+   "family": "Aberrations",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/fungus_rot_idle.png",
+     "frames_dir": "frames/fungus_rot/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/fungus_rot_move.png",
+     "frames_dir": "frames/fungus_rot/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/fungus_rot_attack.png",
+     "frames_dir": "frames/fungus_rot/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/fungus_rot_hit.png",
+     "frames_dir": "frames/fungus_rot/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/fungus_rot_death.png",
+     "frames_dir": "frames/fungus_rot/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "jelly_frost",
+   "family": "Aberrations",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/jelly_frost_idle.png",
+     "frames_dir": "frames/jelly_frost/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/jelly_frost_move.png",
+     "frames_dir": "frames/jelly_frost/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/jelly_frost_attack.png",
+     "frames_dir": "frames/jelly_frost/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/jelly_frost_hit.png",
+     "frames_dir": "frames/jelly_frost/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/jelly_frost_death.png",
+     "frames_dir": "frames/jelly_frost/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "jelly_venom",
+   "family": "Aberrations",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/jelly_venom_idle.png",
+     "frames_dir": "frames/jelly_venom/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/jelly_venom_move.png",
+     "frames_dir": "frames/jelly_venom/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/jelly_venom_attack.png",
+     "frames_dir": "frames/jelly_venom/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/jelly_venom_hit.png",
+     "frames_dir": "frames/jelly_venom/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/jelly_venom_death.png",
+     "frames_dir": "frames/jelly_venom/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "imp_ember",
+   "family": "Flyers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/imp_ember_idle.png",
+     "frames_dir": "frames/imp_ember/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/imp_ember_move.png",
+     "frames_dir": "frames/imp_ember/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/imp_ember_attack.png",
+     "frames_dir": "frames/imp_ember/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/imp_ember_hit.png",
+     "frames_dir": "frames/imp_ember/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/imp_ember_death.png",
+     "frames_dir": "frames/imp_ember/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "imp_void",
+   "family": "Flyers",
+   "cell_px": [
+    32,
+    32
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/imp_void_idle.png",
+     "frames_dir": "frames/imp_void/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/imp_void_move.png",
+     "frames_dir": "frames/imp_void/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/imp_void_attack.png",
+     "frames_dir": "frames/imp_void/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/imp_void_hit.png",
+     "frames_dir": "frames/imp_void/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/imp_void_death.png",
+     "frames_dir": "frames/imp_void/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "slime_king",
+   "family": "Slimes",
+   "cell_px": [
+    48,
+    48
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/slime_king_idle.png",
+     "frames_dir": "frames/slime_king/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/slime_king_move.png",
+     "frames_dir": "frames/slime_king/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/slime_king_attack.png",
+     "frames_dir": "frames/slime_king/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/slime_king_hit.png",
+     "frames_dir": "frames/slime_king/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/slime_king_death.png",
+     "frames_dir": "frames/slime_king/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "slime_king_blood",
+   "family": "Slimes",
+   "cell_px": [
+    48,
+    48
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/slime_king_blood_idle.png",
+     "frames_dir": "frames/slime_king_blood/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/slime_king_blood_move.png",
+     "frames_dir": "frames/slime_king_blood/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/slime_king_blood_attack.png",
+     "frames_dir": "frames/slime_king_blood/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/slime_king_blood_hit.png",
+     "frames_dir": "frames/slime_king_blood/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/slime_king_blood_death.png",
+     "frames_dir": "frames/slime_king_blood/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "broodmother",
+   "family": "Crawlers",
+   "cell_px": [
+    48,
+    48
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/broodmother_idle.png",
+     "frames_dir": "frames/broodmother/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/broodmother_move.png",
+     "frames_dir": "frames/broodmother/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/broodmother_attack.png",
+     "frames_dir": "frames/broodmother/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/broodmother_hit.png",
+     "frames_dir": "frames/broodmother/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/broodmother_death.png",
+     "frames_dir": "frames/broodmother/death/",
+     "loop": false
+    }
+   }
+  },
+  {
+   "id": "broodmother_venom",
+   "family": "Crawlers",
+   "cell_px": [
+    48,
+    48
+   ],
+   "fps": 10,
+   "states": {
+    "idle": {
+     "frames": 4,
+     "sheet": "sheets/broodmother_venom_idle.png",
+     "frames_dir": "frames/broodmother_venom/idle/",
+     "loop": true
+    },
+    "move": {
+     "frames": 6,
+     "sheet": "sheets/broodmother_venom_move.png",
+     "frames_dir": "frames/broodmother_venom/move/",
+     "loop": true
+    },
+    "attack": {
+     "frames": 4,
+     "sheet": "sheets/broodmother_venom_attack.png",
+     "frames_dir": "frames/broodmother_venom/attack/",
+     "loop": false
+    },
+    "hit": {
+     "frames": 2,
+     "sheet": "sheets/broodmother_venom_hit.png",
+     "frames_dir": "frames/broodmother_venom/hit/",
+     "loop": false
+    },
+    "death": {
+     "frames": 6,
+     "sheet": "sheets/broodmother_venom_death.png",
+     "frames_dir": "frames/broodmother_venom/death/",
+     "loop": false
+    }
+   }
+  }
+ ]
+}

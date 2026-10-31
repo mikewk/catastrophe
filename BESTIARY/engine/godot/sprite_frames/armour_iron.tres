@@ -1,0 +1,135 @@
+[gd_resource type="SpriteFrames" load_steps=23 format=3]
+
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/idle/armour_iron_idle_00.png" id="1_bst001"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/idle/armour_iron_idle_01.png" id="2_bst002"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/idle/armour_iron_idle_02.png" id="3_bst003"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/idle/armour_iron_idle_03.png" id="4_bst004"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/move/armour_iron_move_00.png" id="5_bst005"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/move/armour_iron_move_01.png" id="6_bst006"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/move/armour_iron_move_02.png" id="7_bst007"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/move/armour_iron_move_03.png" id="8_bst008"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/move/armour_iron_move_04.png" id="9_bst009"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/move/armour_iron_move_05.png" id="10_bst010"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/attack/armour_iron_attack_00.png" id="11_bst011"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/attack/armour_iron_attack_01.png" id="12_bst012"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/attack/armour_iron_attack_02.png" id="13_bst013"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/attack/armour_iron_attack_03.png" id="14_bst014"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/hit/armour_iron_hit_00.png" id="15_bst015"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/hit/armour_iron_hit_01.png" id="16_bst016"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/death/armour_iron_death_00.png" id="17_bst017"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/death/armour_iron_death_01.png" id="18_bst018"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/death/armour_iron_death_02.png" id="19_bst019"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/death/armour_iron_death_03.png" id="20_bst020"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/death/armour_iron_death_04.png" id="21_bst021"]
+[ext_resource type="Texture2D" path="res://BESTIARY/frames/armour_iron/death/armour_iron_death_05.png" id="22_bst022"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bst001")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("2_bst002")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("3_bst003")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("4_bst004")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_bst005")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("6_bst006")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("7_bst007")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("8_bst008")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("9_bst009")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("10_bst010")
+}],
+"loop": true,
+"name": &"move",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_bst011")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("12_bst012")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("13_bst013")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("14_bst014")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_bst015")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("16_bst016")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_bst017")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("18_bst018")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("19_bst019")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("20_bst020")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("21_bst021")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("22_bst022")
+}],
+"loop": false,
+"name": &"death",
+"speed": 10.0
+}]
