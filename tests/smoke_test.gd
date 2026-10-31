@@ -136,7 +136,7 @@ func _run() -> void:
 	var hearts := GameState.hearts
 	player.global_position = Vector2(29 * TILE + 8, 43 * TILE)
 	await _frames(40)
-	_check(GameState.hearts == hearts - 1, "spikes cost one heart")
+	_check(GameState.hearts == hearts - 1, "spikes cost one heart (%d -> %d)" % [hearts, GameState.hearts])
 	_check(player.global_position.y <= 42 * TILE + 1 and player.global_position.x < 27 * TILE,
 			"spikes return the cat to safe ground (at %s)" % player.global_position)
 

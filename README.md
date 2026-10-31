@@ -33,7 +33,7 @@ scenes/          player, enemies, world objects, rooms, UI, main game scene
 scripts/
   autoload/      GameState: abilities, hearts, energy
   combat/        Hitbox / Hurtbox
-  player/        cat controller and placeholder visuals
+  player/        cat controller and sprite animation
   enemies/       Enemy base class and enemy types
   world/         rooms, soft blocks, spikes, pickups
 tools/           project setup and room-baking tools
@@ -50,6 +50,12 @@ godot --headless res://tools/bake_room.tscn -- test_room
 ```
 
 `tools/configure_project.gd` rewrites the project settings and input map.
+`tools/build_cat_frames.gd` rebuilds the cat's animations from the sheets in
+`assets/sprites/player/` (run it after adding or replacing a sheet):
+
+```
+godot --headless --script res://tools/build_cat_frames.gd
+```
 
 ## Tests
 

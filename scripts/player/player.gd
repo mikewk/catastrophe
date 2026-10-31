@@ -8,6 +8,7 @@ extends CharacterBody2D
 ## adjusted live in the Inspector while the game runs.
 
 signal died
+signal scratch_started(dir: ScratchDir)
 signal respawned
 
 enum State { NORMAL, WALL_SLIDE, WALL_CLIMB, SPIN, POUNCE, POUNCE_LAND, DASH_ATTACK, HURT, DEAD }
@@ -143,6 +144,10 @@ func is_invulnerable() -> bool:
 
 func is_scratching() -> bool:
 	return _scratch_timer > 0.0
+
+
+func is_sprinting() -> bool:
+	return _sprinting
 
 
 # --- Main loop ---------------------------------------------------------------
@@ -419,7 +424,7 @@ func _get_wall_dir() -> int:
 ## Whether there is still wall in front of the cat's head (false at a ledge top).
 func _wall_at_head(dir: int) -> bool:
 	var from := global_position + Vector2(0.0, -BODY_HEIGHT + 2.0)
-	var query := PhysicsRayQueryParameters2D.create(from, from + Vector2(dir * 12.0, 0.0), SOLID_MASK, [get_rid()])
+	var query := PhysicsRayQueryParameters2D.create(from, from + Vector2(dir * 14.0, 0.0), SOLID_MASK, [get_rid()])
 	return not get_world_2d().direct_space_state.intersect_ray(query).is_empty()
 
 
@@ -460,12 +465,13 @@ func _start_scratch() -> void:
 	_scratch_cooldown_timer = scratch_cooldown
 	_position_scratch_hitbox()
 	scratch_hitbox.activate()
+	scratch_started.emit(scratch_dir)
 
 
 func _position_scratch_hitbox() -> void:
 	match scratch_dir:
 		ScratchDir.SIDE:
-			scratch_hitbox.position = Vector2(facing * 18.0, -9.0)
+			scratch_hitbox.position = Vector2(facing * 22.0, -9.0)
 		ScratchDir.UP:
 			scratch_hitbox.position = Vector2(0.0, -28.0)
 		ScratchDir.DOWN:
@@ -487,7 +493,7 @@ func _try_special() -> void:
 		# Dash attack: a fast, high-damage lunge out of a sprint.
 		_change_state(State.DASH_ATTACK)
 		_state_timer = dash_attack_duration
-		dash_attack_hitbox.position.x = facing * 14.0
+		dash_attack_hitbox.position.x = facing * 18.0
 		dash_attack_hitbox.activate()
 	elif pouncing:
 		# Pounce: dive straight down; bounces off whatever it hits.
@@ -520,6 +526,9 @@ func _on_pounce_landed(target: Node) -> void:
 func _on_hit_received(hitbox: Hitbox) -> void:
 	if state == State.DEAD:
 		return
+	# Block any other hits arriving this same physics frame (overlapping spike
+	# tiles, two enemies at once) before the timer takes over next frame.
+	hurtbox.invulnerable = true
 	_cancel_scratch()
 	_sprinting = false
 	if GameState.damage(hitbox.damage):
